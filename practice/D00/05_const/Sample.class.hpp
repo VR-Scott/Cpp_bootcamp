@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   min.cpp                                            :+:      :+:    :+:   */
+/*   Sample.class.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vscott <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/24 11:12:32 by vscott            #+#    #+#             */
-/*   Updated: 2020/01/24 16:12:44 by vscott           ###   ########.fr       */
+/*   Created: 2020/01/24 10:50:26 by vscott            #+#    #+#             */
+/*   Updated: 2020/01/24 16:52:12 by vscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "Sample1.class.hpp"
-#include "Sample2.class.hpp"
+#ifndef Sample_CLASS_H
+# define Sample_CLASS_H
 
-int		main() {
+class Sample {
 
-	Sample1 instance1('a', 42, 4.2f );
-	Sample2 instance2('z', 13,  3.14f );
+public:
 
-	return 0;
+	float const	pi;
+	int			qd;
 
-}
+	Sample( float const f );		//Constuctor
+	~Sample( void );	//Destructor
+
+	void	bar( void ) const;	// const Tells compiler that this member function won't alter current instance
+};
+
+
+#endif // ****************************************************** Sample_CLASS_H //

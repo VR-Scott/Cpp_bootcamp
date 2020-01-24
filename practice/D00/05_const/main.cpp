@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Sample1.class.h                                     :+:      :+:    :+:   */
+/*   min.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vscott <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/24 10:50:26 by vscott            #+#    #+#             */
-/*   Updated: 2020/01/24 12:34:36 by vscott           ###   ########.fr       */
+/*   Created: 2020/01/24 11:12:32 by vscott            #+#    #+#             */
+/*   Updated: 2020/01/24 16:55:54 by vscott           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Sample1_CLASS_H
-# define Sample1_CLASS_H
+#include <iostream>
+#include "Sample.class.hpp"
 
-class Sample1 {
+int		main() {
 
-public:
+	Sample instance( 3.14f );
+	
+	instance.bar();
 
-	char	a1;
-	int		a2;
-	float	a3;
+	return 0;
 
-	Sample1( char p1, int p2, float p3 );		//Constuctor
-	~Sample1( void );	//Destructor
-
-};
-
-
-#endif // ****************************************************** Sample1_CLASS_H //
+}
